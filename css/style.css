@@ -7,7 +7,7 @@
 }
 
 :root{
-    --bg-coloe: #000000;
+    --bg-color: #000000;
     --bg-footer: #222222;
     --exit: #e4060d;
     --bg-exit: #4a4a4a;
@@ -21,5 +21,44 @@
     background-color:  black;
 }
 
+.debug{
+    border: 1px solid white;
+}
 
 /* Header */
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--bg-color);
+}
+
+header{
+    height: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.white{
+    color: var(--primary-color);
+}
+
+.header-flex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-button{
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: var(--bg-exit);
+}
+
+i:only-child{
+    transform: rotate(90deg);
+}
+
+
+/* main */
+
