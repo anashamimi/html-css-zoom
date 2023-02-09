@@ -15,10 +15,10 @@
     --share: #4bc800;
 }
 
-.wrapper{
-    height: 100vh;
-    width: 100%;
-    background-color:  black;
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .debug{
@@ -29,6 +29,8 @@
 body{
     font-family: 'Noto Sans', sans-serif;
     background-color: var(--bg-color);
+    font-size: 10px;
+    height: 100vh;
 }
 
 header{
@@ -55,10 +57,71 @@ header{
     background-color: var(--bg-exit);
 }
 
-i:only-child{
-    transform: rotate(90deg);
-}
-
-
 /* main */
 
+main{
+    width: 100%;
+    height: calc(100% - 90px);
+    padding-bottom: 10px;
+}
+
+.card{
+    width: calc((100% / 7) - 10px);
+}
+
+.margin-top{
+    margin-top: 20px;
+}
+
+.main-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 0 5px;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.image-container {
+    position: relative;
+    margin-top: 10px;
+}
+
+.person{
+    position: absolute;
+    bottom: 0px;
+    background-color: var(--bg-color);
+    opacity: 0.5;
+    padding: 5px;
+}
+
+/* footer */
+footer{
+    background-color: var(--bg-footer);
+    height: 70px;
+    width: 100%;
+}
+
+footer i{
+    font-size: 22px;
+}
+
+.footer-flex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exit{
+    color: var(--exit);
+}
+
+.central-button{
+    justify-content: center;
+   text-align: center;
+}
