@@ -55,13 +55,14 @@ header{
     padding: 2px 5px;
     border-radius: 5px;
     background-color: var(--bg-exit);
+    cursor: pointer;
 }
 
 /* main */
 
 main{
     width: 100%;
-    height: calc(100% - 90px);
+    height: calc(100% - 100px);
     padding-bottom: 10px;
 }
 
@@ -113,15 +114,34 @@ footer i{
 .footer-flex{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
     align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 0 20px;
 }
 
 .exit{
     color: var(--exit);
+    text-align: center;
+    background-color: var(--bg-exit);
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.share i{
+    color: var(--share);
 }
 
 .central-button{
-    justify-content: center;
-   text-align: center;
+    transform:translate(-25%, 0);
 }
+
+i.fa-angle-up{
+    font-size: 10px;
+}
+
+footer i:hover{
+    cursor: pointer;
+}
+
+
