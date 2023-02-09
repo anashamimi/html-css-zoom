@@ -21,9 +21,9 @@
     margin: 0 auto;
 }
 
-.debug{
+/* .debug{
     border: 1px solid white;
-}
+} */
 
 /* Header */
 body{
@@ -62,7 +62,7 @@ header{
 
 main{
     width: 100%;
-    height: calc(100% - 100px);
+    height: calc(100% - 120px);
     padding-bottom: 10px;
 }
 
